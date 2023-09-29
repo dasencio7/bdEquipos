@@ -37,7 +37,5 @@ public class CrudEquipo {
       return respuesta;
   }
 
-    public String Create(DAOequipo equipo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
 }
