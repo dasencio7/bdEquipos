@@ -9,8 +9,18 @@ package DAO;
  * @author dchri
  */
 public class DAOequipo {
+    private int _ID_EQUIPO;
     private String _VCH_NOMBRE_EQUIPO;
- 
+   
+
+    public void setID_EQUIPO(int _ID_EQUIPO) {
+        this._ID_EQUIPO = _ID_EQUIPO;
+    }
+
+    public int getID_EQUIPO() {
+        return _ID_EQUIPO;
+    }
+   
     public String getVCH_NOMBRE_EQUIPO() {
         return _VCH_NOMBRE_EQUIPO;
     }
@@ -18,11 +28,11 @@ public class DAOequipo {
     public void setVCH_NOMBRE_EQUIPO(String _VCH_NOMBRE_EQUIPO) {
         this._VCH_NOMBRE_EQUIPO = _VCH_NOMBRE_EQUIPO;
     }
-    public DAOequipo() {
-       
+    public DAOequipo() {  
     }
  
-    public DAOequipo(String _VCH_NOMBRE_EQUIPO) {
+    public DAOequipo(int _ID_EQUIPO, String _VCH_NOMBRE_EQUIPO) {
+        this._ID_EQUIPO = _ID_EQUIPO;
         this._VCH_NOMBRE_EQUIPO = _VCH_NOMBRE_EQUIPO;
     }
     

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+ 
     <servlet>
-        <servlet-name>nuevo</servlet-name>
-        <servlet-class>Controller.nuevo</servlet-class>
+        <servlet-name>ServletSearchAutor</servlet-name>
+        <servlet-class>Controller.ServletSearchAutor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletSearchEquipo</servlet-name>
+        <servlet-class>Controller.ServletSearchEquipo</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>nuevo</servlet-name>
-        <url-pattern>/nuevo</url-pattern>
+        <servlet-name>ServletSearchAutor</servlet-name>
+        <url-pattern>/ServletSearchAutor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletSearchEquipo</servlet-name>
+        <url-pattern>/ServletSearchEquipo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
